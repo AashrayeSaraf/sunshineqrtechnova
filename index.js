@@ -112,3 +112,7 @@ app.get("/switch/:switch", (req, res) => {
 app.listen(port, () => {
   console.log("Server running on port 8080");
 });
+
+
+module.exports = app;
+
