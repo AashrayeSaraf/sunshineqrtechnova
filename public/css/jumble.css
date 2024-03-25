@@ -1,0 +1,170 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.imgur.com/B4nnSA3.png) ;
+  background-size: contain;
+  background-position: center;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+.logo1{
+  position: absolute;
+  height: 3rem;
+  top: 2rem;
+  right: 1rem;
+  z-index: -1;
+}
+.logo2{
+  position: absolute;
+  height: 3rem;
+  top: 2rem;
+  left: 1rem;
+  z-index: -1;
+}
+.game-container{
+  position: absolute;
+  top: 26vh;
+  margin: 0 1rem;
+  background: linear-gradient(to bottom right,  #a34ebde0, #1694cecb);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fdfdfdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5,
+  0 0 15px #4f84f5;
+}
+.content {
+  text-align: center;
+  font-weight: 900;
+  color: #ffffff;
+}
+.container .content {
+  margin: 25px 20px 35px;
+}
+.content .word {
+  user-select: none;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 24px;
+  margin-right: -24px;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+.content .details {
+  margin: 25px 0 20px;
+}
+.details p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.details p b {
+  font-weight: 500;
+}
+.content input {
+  height: 60px;
+  outline: none;
+  padding: 0 16px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+.content input:focus {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
+}
+.content input::placeholder {
+  color: #aaa;
+}
+.content input:focus::placeholder {
+  color: #bfbfbf;
+}
+
+
+
+input,
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    color: #333333;
+    width: calc(100% - 20px);
+    max-width: 300px;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    background: linear-gradient(to bottom right,  #61bae4, #c50ea7);
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+}
+
+
+@media screen and (max-width: 470px) {
+  .container h2 {
+    font-size: 22px;
+    padding: 13px 20px;
+  }
+  .content .word {
+    font-size: 30px;
+    letter-spacing: 20px;
+    margin-right: -20px;
+  }
+  .container .content {
+    margin: 20px 20px 30px;
+  }
+  .details p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .content input {
+    height: 55px;
+    font-size: 17px;
+  }
+  .buttons button {
+    padding: 14px 0;
+    font-size: 16px;
+    width: calc(100% / 2 - 7px);
+  }
+}

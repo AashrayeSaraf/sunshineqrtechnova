@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sunshine QR Scavanger Hunt</title>
+    <link rel="stylesheet" href="/css/jumble.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const SUCCESS_URL = <%- JSON.stringify(successURL) %>;
+    </script>
+    <script src="/js/jumble.js" defer></script>
+</head>
+
+<body>
+    <img src="https://i.imgur.com/gAqp6uG.png" class="logo1" alt="">
+    <img src="https://i.imgur.com/cK674vF.png" class="logo2" alt="">
+    <div class="container">
+        <div class="game-container">
+        <h2 class="title">Word Scramble</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="button-container">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

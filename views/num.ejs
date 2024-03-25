@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine QR Scavanger Hunt</title>
+    <link rel="stylesheet" href="/css/num.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background"></div>
+    <img src="https://i.imgur.com/gAqp6uG.png" class="logo1" alt="">
+    <img src="https://i.imgur.com/cK674vF.png" class="logo2" alt="">
+    <div class="container">
+        <div class="game-container">
+            <h1 class="title">Guess the Number</h1>
+            <div class="content">
+                <p>I'm thinking of a number between 1 and 100. Can you guess what it is?</p>
+                <input type="number" id="guess" placeholder="Enter your guess" autofocus>
+                <div class="button-container">
+                    <button class="guess-btn" onclick="checkGuess()">Guess</button>
+                    <button class="restart-btn" onclick="restartGame() ">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const SUCCESS_MESSAGE = <%- JSON.stringify(successMessage) %>;
+    </script>
+    <script src="/js/num.js"></script>
+</body>
+
+</html>

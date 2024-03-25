@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Path Configuration Overview</h1>
+    <h1>Paths</h1>
+    <% for(let path in data.paths) { %>
+        <h2>Path <%= path %></h2>
+        <% for(let stage in data.paths[path]) { %>
+            <b>Stage <%= stage %>: </b>
+            <a href='<%= "/path/" + path + "/" + stage + "?code=" + data.paths[path][stage].code %>''><%= data.config.urlRoot + "/path/" + path + "/" + stage + "?code=" + data.paths[path][stage].code %></a><br/>
+        <% } %>
+    <% } %>
+
+    <h1>Switches</h1>
+    <% for(let switchId in data.switches) { %>
+        <h2>Switch <%= switchId %></h2>
+        <b>Accessible via: </b>
+        <a href='<%= "/switch/" + switchId + "?code=" + data.switches[switchId].code %>'><%= data.config.urlRoot + "/switch/" + switchId + "?code=" + data.switches[switchId].code %></a><br/>
+        <% for(let path in data.switches[switchId].routes) { %>
+            <% let stage = data.switches[switchId].routes[path] %>
+            <b>Path <%= path %> → </b>
+            <a href='<%= "/path/" + path + "/" + stage + "?code=" + data.paths[path][stage].code %>'><%= data.config.urlRoot + "/path/" + path + "/" + stage + "?code=" + data.paths[path][stage].code %></a><br/>
+        <% } %>
+    <% } %>
+
+</body>
+
+</html>

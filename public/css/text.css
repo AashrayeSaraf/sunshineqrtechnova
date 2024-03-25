@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.imgur.com/B4nnSA3.png);
+    background-size: contain;
+    background-position: center;
+    z-index: -2;
+    
+}
+.logo1{
+    position: absolute;
+    height: 3rem;
+    top: 2rem;
+    right: 1rem;
+    z-index: -1;
+}
+.logo2{
+    position: absolute;
+    height: 3rem;
+    top: 2rem;
+    left: 1rem;
+    z-index: -1;
+}
+
+.game-container{
+    position: absolute;
+    top: 30vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5;
+}
+
+
+p{
+    background: linear-gradient(to bottom right,  #a34ebde0, #1694cecb);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 65vw;
+    position: absolute;
+    top: 40vh;
+    left: 16vw;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    font-family: Georgia;
+    text-align: center;
+}

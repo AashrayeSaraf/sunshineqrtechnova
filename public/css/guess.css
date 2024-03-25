@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.imgur.com/B4nnSA3.png);
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+}
+.logo1{
+    position: absolute;
+    height: 3rem;
+    top: 2rem;
+    right: 1rem;
+    z-index: -1;
+}
+.logo2{
+    position: absolute;
+    height: 3rem;
+    top: 2rem;
+    left: 1rem;
+    z-index: -1;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#level-container {
+    background: linear-gradient(to bottom right,  #a34ebde0, #1694cecb);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#level-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5,
+    0 0 15px #4f84f5;
+}
+
+#sentence {
+    padding: 20px;
+    font-family: Georgia;
+    text-align: center;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+input,
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    font-size: 1rem;
+    color: #333333;
+    width: calc(100% - 20px);
+    max-width: 300px;
+}
+
+#blank {
+    border: 1px solid #000;
+    padding: 3px;
+    margin: 0 5px;
+}
+
+
+.btn{
+    font-weight: 600;
+    background: linear-gradient(to bottom right,  #61bae4, #c50ea7);
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
