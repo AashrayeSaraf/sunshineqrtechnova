@@ -1,7 +1,7 @@
 module.exports = {
     "config": {
         serverPort: 8080, // The port the server will run on
-        devMode: true, // Whether to enable overviews of all paths and stages
+        devMode: false, // Whether to enable overviews of all paths and stages
         urlRoot: "http://localhost:8080", // The root URL of the website, used for generating links (in overview mode only) Do NOT include a trailing slash for correct URL generation
         cookieSecret: "Cookie is delicious" // A secret string used to sign cookies. Change this to a random string for security
     },
