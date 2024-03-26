@@ -110,7 +110,7 @@ app.get("/switch/:switch", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("Server running on port 8080");
+  console.log("Server running on port 80");
 });
 
 
