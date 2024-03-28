@@ -3,7 +3,6 @@ var app = express();
 var path = require('path');
 
 const data = require("./data.js");
-const express = require("express");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const crypto = require("crypto")
