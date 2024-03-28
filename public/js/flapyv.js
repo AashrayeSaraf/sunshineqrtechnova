@@ -85,7 +85,7 @@ function updateGame() {
     flyHeight = Math.min(flyHeight + flight, canvas.height - size[1]);
 
     // Check if the current score equals POINTS_GOAL
-    if (currentScore >= POINTS_GOAL) {
+    if (currentScore >= 100) {
       // Stop and reset the game when the score reaches POINTS_GOAL
       gamePlaying = false;
       setup();
@@ -179,9 +179,9 @@ const render = () => {
       ...size
     );
     // text accueil
-    ctx.fillText(`Best score : ${bestScore}`, 215, 245);
-    ctx.fillText("Play Now and Get Riddle", 215, 535);
-    ctx.fillText(`Score ${POINTS_GOAL} ->> Riddle!`, 215, 635);
+    ctx.fillText(`File Rejected : ${bestScore}`, 215, 245);
+    ctx.fillText("Play Now and Get your event approved", 215, 535);
+    ctx.fillText(`Score 100 ->> File!`, 215, 635);
     ctx.font = "bold 30px courier";
     ctx.textAlign = "center";
   }
