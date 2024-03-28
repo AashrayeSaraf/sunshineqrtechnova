@@ -1,3 +1,7 @@
+var express = require('express');
+var app = express();
+var path = require('path');
+
 const data = require("./data.js");
 const express = require("express");
 const cookieParser = require("cookie-parser");
@@ -108,6 +112,8 @@ app.get("/switch/:switch", (req, res) => {
   });
   res.redirect(`/path/${matchedPathId}/${targetStageId}?code=${pathObj[targetStageId].code}`);
 });
+
+app.listen(process.env.PORT || 8080);
 
 const host = '0.0.0.0';
 const PORT = process.env.PORT || 8080;
