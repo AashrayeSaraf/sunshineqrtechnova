@@ -180,7 +180,7 @@ const render = () => {
     );
     // text accueil
     ctx.fillText(`Best score : ${bestScore}`, 215, 245);
-    ctx.fillText("Click to play", 215, 535);
+    ctx.fillText("Play Now and Get Riddle", 215, 535);
     ctx.fillText(`Score ${POINTS_GOAL} ->> Riddle!`, 215, 635);
     ctx.font = "bold 30px courier";
     ctx.textAlign = "center";
