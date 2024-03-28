@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const img = new Image();
-img.src = "https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png";
+img.src = "https://github.com/AashrayeSaraf/sunshineqrtechnova/blob/bbb0c4bbb85a67e47b7605d6f238edff4adf9a1c/flappy-bird-set%20copy.png";
 
 // general settings
 let gamePlaying = false;
