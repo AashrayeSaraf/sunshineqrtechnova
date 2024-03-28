@@ -109,6 +109,7 @@ app.get("/switch/:switch", (req, res) => {
   res.redirect(`/path/${matchedPathId}/${targetStageId}?code=${pathObj[targetStageId].code}`);
 });
 
+const host = '0.0.0.0';
 const PORT = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log("Server running on port 8080");
